@@ -1,5 +1,6 @@
 package com.empowersmp.listeners;
 
+import com.destroystokyo.paper.event.player.PlayerArmorChangeEvent;
 import com.empowersmp.EmpowerSMP;
 import com.empowersmp.data.PlayerData;
 import com.empowersmp.skills.SkillTree;
@@ -8,7 +9,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerArmorChangeEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
