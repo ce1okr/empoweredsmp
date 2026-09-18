@@ -15,7 +15,7 @@ import java.util.List;
 
 /**
  * Custom items granted by the skill trees. The Mobility Level 8 reward is a
- * real Spear (Material.SPEAR, added in the Mounts of Mayhem update) enchanted
+ * real Netherite Spear (added in the Mounts of Mayhem update) enchanted
  * with Sharpness VI, exceeding vanilla's normal Sharpness V cap the same way
  * Damage L3's anvil override does for other weapons.
  */
@@ -27,7 +27,7 @@ public final class CustomItems {
     private CustomItems() {}
 
     public static ItemStack empoweredSpear() {
-        ItemStack item = new ItemStack(Material.SPEAR);
+        ItemStack item = new ItemStack(Material.NETHERITE_SPEAR);
         ItemMeta meta = item.getItemMeta();
         meta.displayName(Component.text("Empowered Spear", NamedTextColor.LIGHT_PURPLE)
                 .decoration(TextDecoration.ITALIC, false));
