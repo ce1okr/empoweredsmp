@@ -1,0 +1,20 @@
+name: EmpowerSMP
+version: '1.0.0'
+main: com.empowersmp.EmpowerSMP
+api-version: '1.21'
+author: EmpowerSMP
+description: Event-driven RPG skill tree plugin (Mobility, Damage, Vitality, Prosperity, Tenacity)
+
+commands:
+  empower:
+    description: EmpowerSMP admin & player command
+    usage: /empower <give|set|levels|choice|info> ...
+    permission: empowersmp.use
+
+permissions:
+  empowersmp.admin:
+    description: Allows granting/setting skill levels
+    default: op
+  empowersmp.use:
+    description: Allows using base empower commands
+    default: true

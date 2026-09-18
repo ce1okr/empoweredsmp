@@ -1,0 +1,35 @@
+# EmpowerSMP configuration
+
+mobility:
+  level6-speed3-enabled: true        # Level 6 "Speed III" is marked optional in the design doc
+
+damage:
+  crit-damage-multiplier: 1.5        # multiplier applied when a bonus (non-fall) crit triggers
+
+enchant-caps:
+  sharpness-family:                  # Sharpness, Smite, Bane of Arthropods
+    base-max: 4                      # cap for everyone by default
+    elevated-max: 6                  # cap once unlock-level is reached
+    unlock-level: 3                  # Damage tree level required (Damage L3)
+  sweeping-edge:
+    elevated-max: 5                  # cap once unlock-level is reached (vanilla's own cap of 3 applies below it)
+    unlock-level: 6                  # Damage tree level required (Damage L6)
+  protection-family:                 # Protection, Blast/Projectile/Fire Protection
+    base-max: 3                      # cap for everyone by default
+    elevated-max: 4                  # cap once unlock-level is reached
+    unlock-level: 4                  # Vitality tree level required (Vitality L4)
+
+prosperity:
+  ore-drop-bonus-level2: 0.50
+  ore-drop-bonus-level7: 1.00
+  xp-multiplier-level3: 2.0
+  xp-multiplier-level8: 3.0
+  potion-multiplier-level4: 1.5
+  villager-trade-multiplier-level6: 2.0
+
+tenacity:
+  knockback-resistance-level8: 1.0   # 0.0-1.0, full = completely immune to knockback
+
+storage:
+  # playerdata/<uuid>.yml files under the plugin's data folder
+  autosave-interval-minutes: 5
